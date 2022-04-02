@@ -1,0 +1,17 @@
+
+const BASE_URL = "https://api-issue-tracker.salesx-staging.xyz/api/v1/";
+const BASE_URL_IMAGE = "https://staging-brandactivation.sgp1.digitaloceanspaces.com/";
+
+
+//route name
+const HOME_PAGE = "/home_page";
+const LOGIN_PAGE = "/login_page";
+const SIGNUP_PAGE = "/signup_page";
+const SETUP_PAGE = "/setup_page";
+const FORGET_PASSWORD_PAGE = "/forget_pass_page";
+
+//profile page
+const PROFILE_PAGE = "/profile_page";
+
+
+
