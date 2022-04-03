@@ -10,6 +10,12 @@ const SIGNUP_PAGE = "/signup_page";
 const SETUP_PAGE = "/setup_page";
 const FORGET_PASSWORD_PAGE = "/forget_pass_page";
 
+//onboarding
+const ONBOARDING_PAGE = "/onboarding_page";
+const FIRST_PAGE = "/first_page";
+const SECOND_PAGE = "/second_page";
+const THIRD_PAGE = "/third_page";
+
 //profile page
 const PROFILE_PAGE = "/profile_page";
 

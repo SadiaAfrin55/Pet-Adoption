@@ -1,5 +1,9 @@
 
 import 'package:flutter/material.dart';
+import 'package:pet_adoption/Presentation/Screens/Onboarding/onboarding_page.dart';
+import 'package:pet_adoption/Presentation/Screens/Onboarding/page_one.dart';
+import 'package:pet_adoption/Presentation/Screens/Onboarding/page_three.dart';
+import 'package:pet_adoption/Presentation/Screens/Onboarding/page_two.dart';
 
 import '../Bloc/Login/login_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -23,6 +27,30 @@ class AppRouter {
             builder: (BuildContext context) => BlocProvider(
               create: (context) => UserCubit(),
               child: HomePage(),
+            ));
+      case ONBOARDING_PAGE:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => BlocProvider(
+              create: (context) => UserCubit(),
+              child: OnboardingPage(),
+            ));
+      case FIRST_PAGE:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => BlocProvider(
+              create: (context) => UserCubit(),
+              child: PageOne(),
+            ));
+      case SECOND_PAGE:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => BlocProvider(
+              create: (context) => UserCubit(),
+              child: PageTwo(),
+            ));
+      case THIRD_PAGE:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => BlocProvider(
+              create: (context) => UserCubit(),
+              child: PageThree(),
             ));
       case LOGIN_PAGE:
         return MaterialPageRoute(
