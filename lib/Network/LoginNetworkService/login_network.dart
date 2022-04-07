@@ -11,7 +11,7 @@ class LoginNetwork{
   Future logIn(Map<String, String> data)async {
     try{
       var response = await http.post(
-        Uri.parse(BASE_URL + "users/login"),
+        Uri.parse(BASE_URL + "api/v1/users/login"),
         headers: {
           "Content-type": "application/json",
           "Accept": "application/json"

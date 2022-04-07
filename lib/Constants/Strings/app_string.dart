@@ -1,5 +1,5 @@
 
-const BASE_URL = "https://api-issue-tracker.salesx-staging.xyz/api/v1/";
+const BASE_URL = "https://apiactivation-staging.salesx.xyz/";
 const BASE_URL_IMAGE = "https://staging-brandactivation.sgp1.digitaloceanspaces.com/";
 
 
