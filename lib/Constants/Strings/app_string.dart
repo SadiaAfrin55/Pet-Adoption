@@ -19,5 +19,9 @@ const THIRD_PAGE = "/third_page";
 //profile page
 const PROFILE_PAGE = "/profile_page";
 
+//Other Pages
+const DETAILES_PAGE = "/details_page";
+
+
 
 

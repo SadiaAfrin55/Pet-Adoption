@@ -10,6 +10,12 @@ class PetSetupPage extends StatefulWidget {
 class _PetSetupPageState extends State<PetSetupPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Container(
+        child: Center(
+          child: Text('setup'),
+        ),
+      ),
+    );
   }
 }

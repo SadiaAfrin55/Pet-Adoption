@@ -76,6 +76,13 @@ class AppRouter {
               create: (context) => UserCubit(),
               child: ForgetPassword(),
             ));
+        case DETAILES_PAGE:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => BlocProvider(
+              create: (context) => UserCubit(),
+              child: ForgetPassword(),
+            ));
+
       default:
         return MaterialPageRoute(
             builder: (BuildContext context) => BlocProvider(
