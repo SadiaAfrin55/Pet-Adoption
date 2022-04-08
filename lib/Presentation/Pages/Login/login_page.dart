@@ -87,6 +87,49 @@ class _LoginPageState extends State<LoginPage> {
                     alignment: Alignment.bottomLeft,
                     child: SvgPicture.asset("assets/icons/down.svg"),
                   ),
+                  Align(
+                    alignment: Alignment.topCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                        top: 110
+                      ),
+                      child: Lottie.asset(
+                        "assets/lottie/cat.json",
+                        height: 250,
+                        width: 350,
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                        bottom: 430,
+                        left: 140,
+                      ),
+                      child: Text(
+                        "Login",
+                        style: TextStyle(
+                          fontSize: 18,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                        bottom: 342,
+                        left: 135,
+                      ),
+                      child: Text(
+                        "PLease sign in to continue",
+                        style: TextStyle(
+                          fontSize: 8,
+                        ),
+                      ),
+                    ),
+                  ),
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 16),
                     child: Form(
@@ -95,34 +138,7 @@ class _LoginPageState extends State<LoginPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children:[
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                  width:278,
-                                  height: 125,
-                                child: Stack(
-                                  children: [
-                                    // Align(
-                                    //     alignment: Alignment.topLeft,
-                                    //     child: Container(
-                                    //       color: Colors.lightBlue,
-                                    //         child: Text('Login',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w900,color: Colors.black.withOpacity(0.5)),))),
-                                    Container(
-                                        width:278,
-                                        height: 125,
-                                        child: Lottie.asset("assets/lottie/cat.json")),
-                                    // Align(
-                                    //     alignment: Alignment.bottomLeft,
-                                    //     child: Container(
-                                    //         color: Colors.lightGreen,
-                                    //         child: Text('PLease sign in to continue',style: TextStyle(fontSize: 8,fontWeight: FontWeight.w300,color: Colors.black.withOpacity(0.5)),))),
-                                  ],
-                                ),
-                              ),
-                              //Image.asset('assets/images/catLogin.png'),
-                            ],
-                          ),
+
                           MaterialTextField(lable:tr("abcd@gma.com"),readOnly: false,prefIcon: Icon(Icons.mail,color: Colors.black.withOpacity(0.3),), controller:emilController ,),
                           const SizedBox(height: 21,),
                           MaterialTextFieldPassword(lable: tr("Password"),controller:passwordController ,prefIcon: Icon(Icons.mail,color: Colors.black.withOpacity(0.3)),),

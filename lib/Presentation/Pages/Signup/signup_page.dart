@@ -75,7 +75,7 @@ class _SignupPageState extends State<SignupPage> {
         }
       },
       child: SafeArea(
-        maintainBottomViewPadding: true,
+        //maintainBottomViewPadding: true,
         minimum: EdgeInsets.zero,
         child: Scaffold(
           resizeToAvoidBottomInset: false,
@@ -98,42 +98,58 @@ class _SignupPageState extends State<SignupPage> {
                       child: SvgPicture.asset("assets/icons/down.svg"),
                     ),
                   ),
+                  Align(
+                    alignment: Alignment.topCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                          top: 75
+                      ),
+                      child: Lottie.asset(
+                        "assets/lottie/cat.json",
+                        height: 250,
+                        width: 350,
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                        bottom: 500,
+                        left: 135,
+                      ),
+                      child: Text(
+                        "SignUp",
+                        style: TextStyle(
+                          fontSize: 18,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                        bottom: 412,
+                        left: 135,
+                      ),
+                      child: Text(
+                        "PLease sign in to continue",
+                        style: TextStyle(
+                          fontSize: 8,
+                        ),
+                      ),
+                    ),
+                  ),
                   Container(
-                    margin: EdgeInsets.symmetric(horizontal: 16),
+                    margin: EdgeInsets.only(left: 16,right: 16),
+                    padding: EdgeInsets.only(top: 110),
                     child: Form(
                       key: _globalkey,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children:[
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                width:278,
-                                height: 125,
-                                child: Stack(
-                                  children: [
-                                    // Align(
-                                    //     alignment: Alignment.topLeft,
-                                    //     child: Container(
-                                    //       color: Colors.lightBlue,
-                                    //         child: Text('Login',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w900,color: Colors.black.withOpacity(0.5)),))),
-                                    Container(
-                                        width:278,
-                                        height: 125,
-                                        child: Lottie.asset("assets/lottie/cat.json")),
-                                    // Align(
-                                    //     alignment: Alignment.bottomLeft,
-                                    //     child: Container(
-                                    //         color: Colors.lightGreen,
-                                    //         child: Text('PLease sign in to continue',style: TextStyle(fontSize: 8,fontWeight: FontWeight.w300,color: Colors.black.withOpacity(0.5)),))),
-                                  ],
-                                ),
-                              ),
-                              //Image.asset('assets/images/catLogin.png'),
-                            ],
-                          ),
                           MaterialTextField(lable:tr("abcd@gma.com"),readOnly: false,prefIcon: Icon(Icons.mail,color: Colors.black.withOpacity(0.3),), controller:emilController ,),
                           const SizedBox(height: 12,),
                           MaterialTextField(lable:tr("Name"),readOnly: false,prefIcon: Icon(Icons.person,color: Colors.black.withOpacity(0.3),), controller:nameController ,),
